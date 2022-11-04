@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./timer.js" type="module"></script> 
+</head>
+<body>
+    <a href="../index.html">
+        <button>Калькулятор дат</button>
+    </a>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="page-header">
+            <h3>Таймер</h3>
+            <p class="text-center text-ack"></p>
+          </div> <!--/.page-header-->
+          <div id="errorMessage" class="sr-only" role="error"></div>
+          <button type="button" class="btn btn-primary center-block btn-lg" id="refresh" class="sr-only"><span class="glyphicon glyphicon-refresh"> СБРОС </button>
+          <h2 id="time" class="text-center clock-timer">00:00</h2>
+          <div id="inputArea">
+            <input type="text" id="minutes" class="input-lg center-block" placeholder="Введите минуты"><br>
+              <button type="button" id ="breakBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-time"></span> СТАРТ </button>
+          </div><!--/#inputArea-->
+          <div id="pauseArea">
+            <button type="button" id ="pauseBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-pause"> ПАУЗА </button>
+          </div><!--/#pauseArea-->
+          <div id="resumeArea">
+            <button type="button" id ="resumeBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-play"> ПАУЗА </button>
+          </div><!--/#resumeArea-->
+        </div>
+      </div>
+    
+</body>
+</html>
